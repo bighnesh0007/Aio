@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-green-600 dark:text-green-400">
-              PlantAI
+              Agri Vision
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
