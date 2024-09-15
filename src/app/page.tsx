@@ -112,7 +112,7 @@ const LandingPage = () => {
     {
       name: "Jack",
       username: "@jack",
-      body: "AgriAI has revolutionized my farming practices. The crop analysis is spot on!",
+      body: "AgriVision has revolutionized my farming practices. The crop analysis is spot on!",
       img: "https://avatar.vercel.sh/jack",
     },
     {
@@ -142,7 +142,7 @@ const LandingPage = () => {
     {
       name: "Lisa",
       username: "@lisasustainable",
-      body: "AgriAI's soil health analysis has dramatically improved my land's fertility.",
+      body: "AgriVision's soil health analysis has dramatically improved my land's fertility.",
       img: "https://avatar.vercel.sh/lisa",
     },
   ]
@@ -167,7 +167,7 @@ const LandingPage = () => {
           className="text-center px-4"
         >
           <h1 className="text-5xl font-bold text-green-800 dark:text-green-200 mb-4">
-            <TextGenerateEffect words="AgriAI: Cultivating Tomorrow" />
+            <TextGenerateEffect words="AgriAVision: Cultivating Tomorrow" />
           </h1>
           <p className="text-xl text-green-600 dark:text-green-400 mb-8">Empowering farmers with cutting-edge AI solutions</p>
           <Link href={'/home'}>
@@ -372,7 +372,7 @@ const LandingPage = () => {
           >
             Ready to revolutionize your farming?
           </motion.h2>
-          <p className="mb-8">Join thousands of farmers already benefiting from AgriAI&apos;s cutting-edge solutions.</p>
+          <p className="mb-8">Join thousands of farmers already benefiting from AgriVision&apos;s cutting-edge solutions.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Input placeholder="Enter your email" className="max-w-xs text-black" />
             <Button variant="secondary" className="bg-white text-green-600 hover:bg-green-100">Get Personalized Demo</Button>
@@ -388,7 +388,7 @@ const LandingPage = () => {
       <footer className="bg-green-800 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-xl font-bold">AgriAI</h3>
+            <h3 className="text-xl font-bold">AgriVision</h3>
             <p className="mt-2 text-sm">Empowering farmers with intelligent solutions</p>
           </div>
           <div className="flex gap-4">
