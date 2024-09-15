@@ -167,7 +167,7 @@ const LandingPage = () => {
           className="text-center px-4"
         >
           <h1 className="text-5xl font-bold text-green-800 dark:text-green-200 mb-4">
-            <TextGenerateEffect words="AgriAVision: Cultivating Tomorrow" />
+            <TextGenerateEffect words="AgriVision: Cultivating Tomorrow" />
           </h1>
           <p className="text-xl text-green-600 dark:text-green-400 mb-8">Empowering farmers with cutting-edge AI solutions</p>
           <Link href={'/home'}>
@@ -175,7 +175,7 @@ const LandingPage = () => {
               size="lg"
               className="bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 z-10 relative"
             >
-              Explore AgriAI
+              Explore AgriVision
             </Button>
           </Link>
         </motion.div>
