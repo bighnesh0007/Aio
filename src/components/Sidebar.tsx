@@ -33,6 +33,8 @@ import { TiWeatherPartlySunny } from "react-icons/ti";
 import { BiSolidDashboard } from "react-icons/bi";
 import { TbLemon } from "react-icons/tb";
 import { FaDisease } from "react-icons/fa";
+import { GiPlantRoots } from "react-icons/gi";
+import { RiPlantFill } from "react-icons/ri";
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
@@ -42,12 +44,12 @@ const Sidebar: React.FC = () => {
 
   const navItems = [
     { name: "Home", href: "/", icon: FaHome },
-    { name: "Weather Dashboard", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
-    { name: "Crop Dashboard", href: "/CropDashboard", icon: BiSolidDashboard },
-    { name: "Soil Dashboard", href: "/SoilDashboard", icon: BiSolidDashboard },
-    { name: "Identify", href: "/identify", icon: SiGooglelens },
-    { name: "Crop Recommendation", href: "/CropRecommendation", icon: FaSeedling },
-    { name: "Soil Quality Analysis", href: "/SoilQualityAnalysis", icon: FaSeedling },
+    { name: "Weather Status", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
+    { name: "Crop Metrics", href: "/CropDashboard", icon: GiPlantRoots },
+    { name: "Soil Insights", href: "/SoilDashboard", icon: BiSolidDashboard },
+    { name: "Plant Finder", href: "/identify", icon: RiPlantFill },
+    { name: "Crop Advisor", href: "/CropRecommendation", icon: FaSeedling },
+    { name: "Soil Diagnostics", href: "/SoilQualityAnalysis", icon: FaSeedling },
     { name: "Fertilizer Recommendation", href: "/fertilizerRecommendation", icon: FaSeedling },
     { name: "Crop Road Map", href: "/CropRoadMapBuilder", icon: RiRoadMapLine },
     { name: "Voice To Search", href: "/voice", icon: MdKeyboardVoice },
