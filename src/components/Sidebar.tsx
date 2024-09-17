@@ -45,7 +45,7 @@ const Sidebar: React.FC = () => {
   const navItems = [
     { name: "Home", href: "/", icon: FaHome },
     { name: "Weather Status", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
-    { name: "Crop Metrics", href: "/CropDashboard", icon: GiPlantRoots },
+    { name: "Crop Insights", href: "/CropDashboard", icon: GiPlantRoots },
     { name: "Soil Insights", href: "/SoilDashboard", icon: BiSolidDashboard },
     { name: "Plant Finder", href: "/identify", icon: RiPlantFill },
     { name: "Crop Advisor", href: "/CropRecommendation", icon: FaSeedling },
