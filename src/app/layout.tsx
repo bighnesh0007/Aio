@@ -11,6 +11,7 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import { FloatingDockDemo } from "./FloatingDock";
+import ChatBot from "@/components/chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,7 @@ export default function RootLayout({
               <Sidebar />
               <main className="flex-1 p-4">
                 {children}
-                {/* <ChatBot /> */}
+                <ChatBot />
               </main>
             </div>
             <footer>
