@@ -38,6 +38,7 @@ import { RiPlantFill } from "react-icons/ri";
 import { GiFertilizerBag } from "react-icons/gi";
 import { GiPlantWatering } from "react-icons/gi";
 import { GiFireFlower } from "react-icons/gi";
+import { CgInsights } from "react-icons/cg";
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
@@ -49,7 +50,7 @@ const Sidebar: React.FC = () => {
     { name: "Home", href: "/", icon: FaHome },
     { name: "Weather Status", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
     { name: "Crop Explorer", href: "/CropDashboard", icon: GiPlantRoots },
-    { name: "Soil Insights", href: "/SoilDashboard", icon: BiSolidDashboard },
+    { name: "Soil Insights", href: "/SoilDashboard", icon: CgInsights },
     { name: "Plant Finder", href: "/identify", icon: RiPlantFill },
     { name: "Crop Advisor", href: "/CropRecommendation", icon: FaSeedling },
     { name: "Soil Diagnostics", href: "/SoilQualityAnalysis", icon: GiPlantWatering},
@@ -109,7 +110,7 @@ const Sidebar: React.FC = () => {
       <div className="flex items-center justify-between mb-6">
         {!isCollapsed && (
           <h2 className="text-2xl font-bold text-green-600 dark:text-green-400">
-            Over View
+            Overview Hub
           </h2>
         )}
         <button
