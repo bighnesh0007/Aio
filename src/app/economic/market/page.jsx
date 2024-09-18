@@ -13,48 +13,48 @@ import { Flower2, Carrot, Apple, Drumstick, Beef, TrendingUp, TrendingDown, Sear
 
 // Data from the provided JSON files (unchanged)
 const flowersData = [
-  { name: "Anthurium", quantity: "1 Kg", price: 370, trend: "High" },
-  { name: "Carnation", quantity: "1 Kg", price: 390, trend: "High" },
-  { name: "Jasmine", quantity: "1 Kg", price: 220, trend: "Medium" },
-  { name: "Marigold", quantity: "1 Kg", price: 190, trend: "Low" },
-  { name: "Orchid", quantity: "1 Kg", price: 430, trend: "High" },
-  { name: "Rose", quantity: "1 Kg", price: 230, trend: "Medium" },
+  { name: "Anthurium", quantity: "1 Kg", price: 370, Trend: "High" },
+  { name: "Carnation", quantity: "1 Kg", price: 390, Trend: "High" },
+  { name: "Jasmine", quantity: "1 Kg", price: 220, Trend: "Medium" },
+  { name: "Marigold", quantity: "1 Kg", price: 190, Trend: "Low" },
+  { name: "Orchid", quantity: "1 Kg", price: 430, Trend: "High" },
+  { name: "Rose", quantity: "1 Kg", price: 230, Trend: "Medium" },
 ]
 
 const vegetablesData = [
-  { name: "Bangalore Tomato", quantity: "1 Kg", price: 80, trend: "Low" },
-  { name: "Beans", quantity: "1 Kg", price: 180, trend: "Medium" },
-  { name: "Beetroot", quantity: "1 Kg", price: 45, trend: "Low" },
-  { name: "Bitter Gourd", quantity: "1 Kg", price: 60, trend: "Low" },
-  { name: "Bottle Gourd", quantity: "1 Kg", price: 20, trend: "Low" },
-  { name: "Brinjal", quantity: "1 Kg", price: 40, trend: "Low" },
+  { name: "Bangalore Tomato", quantity: "1 Kg", price: 80, Trend: "Low" },
+  { name: "Beans", quantity: "1 Kg", price: 180, Trend: "Medium" },
+  { name: "Beetroot", quantity: "1 Kg", price: 45, Trend: "Low" },
+  { name: "Bitter Gourd", quantity: "1 Kg", price: 60, Trend: "Low" },
+  { name: "Bottle Gourd", quantity: "1 Kg", price: 20, Trend: "Low" },
+  { name: "Brinjal", quantity: "1 Kg", price: 40, Trend: "Low" },
 ]
 
 const fruitsData = [
-  { name: "Apple", quantity: "1 Kg", price: 220, trend: "Medium" },
-  { name: "Avocado", quantity: "1 Kg", price: 180, trend: "Medium" },
-  { name: "Black Grape", quantity: "1 Kg", price: 80, trend: "Low" },
-  { name: "Cherry", quantity: "1 Kg", price: 600, trend: "High" },
-  { name: "Coconut", quantity: "1 Piece", price: 30, trend: "Low" },
-  { name: "Custard Apple", quantity: "1 Kg", price: 140, trend: "Medium" },
+  { name: "Apple", quantity: "1 Kg", price: 220, Trend: "Medium" },
+  { name: "Avocado", quantity: "1 Kg", price: 180, Trend: "Medium" },
+  { name: "Black Grape", quantity: "1 Kg", price: 80, Trend: "Low" },
+  { name: "Cherry", quantity: "1 Kg", price: 600, Trend: "High" },
+  { name: "Coconut", quantity: "1 Piece", price: 30, Trend: "Low" },
+  { name: "Custard Apple", quantity: "1 Kg", price: 140, Trend: "Medium" },
 ]
 
 const chickenData = [
-  { name: "Boneless Chicken", quantity: "1 Kg", price: 210, trend: "Medium" },
-  { name: "Chicken", quantity: "1 Kg", price: 160, trend: "Medium" },
-  { name: "Chicken Liver", quantity: "1 Kg", price: 120, trend: "Low" },
-  { name: "Country Chicken", quantity: "1 Kg", price: 360, trend: "High" },
-  { name: "Live Chicken", quantity: "1 Kg", price: 130, trend: "Low" },
-  { name: "Skinless Chicken", quantity: "1 Kg", price: 200, trend: "Medium" },
+  { name: "Boneless Chicken", quantity: "1 Kg", price: 210, Trend: "Medium" },
+  { name: "Chicken", quantity: "1 Kg", price: 160, Trend: "Medium" },
+  { name: "Chicken Liver", quantity: "1 Kg", price: 120, Trend: "Low" },
+  { name: "Country Chicken", quantity: "1 Kg", price: 360, Trend: "High" },
+  { name: "Live Chicken", quantity: "1 Kg", price: 130, Trend: "Low" },
+  { name: "Skinless Chicken", quantity: "1 Kg", price: 200, Trend: "Medium" },
 ]
 
 const muttonData = [
-  { name: "Boneless Mutton", quantity: "1 Kg", price: 750, trend: "High" },
-  { name: "Brain", quantity: "1 Kg", price: 480, trend: "High" },
-  { name: "Head", quantity: "1 Piece", price: 240, trend: "Medium" },
-  { name: "Heart", quantity: "1 Kg", price: 470, trend: "High" },
-  { name: "Intestine", quantity: "1 Kg", price: 420, trend: "High" },
-  { name: "Kidney", quantity: "1 Kg", price: 450, trend: "High" },
+  { name: "Boneless Mutton", quantity: "1 Kg", price: 750, Trend: "High" },
+  { name: "Brain", quantity: "1 Kg", price: 480, Trend: "High" },
+  { name: "Head", quantity: "1 Piece", price: 240, Trend: "Medium" },
+  { name: "Heart", quantity: "1 Kg", price: 470, Trend: "High" },
+  { name: "Intestine", quantity: "1 Kg", price: 420, Trend: "High" },
+  { name: "Kidney", quantity: "1 Kg", price: 450, Trend: "High" },
 ]
 
 
@@ -119,8 +119,8 @@ export default function AdvancedPriceDashboard() {
 
   const trendData = useMemo(() => {
     return filteredData.map(item => {
-      const trend = item.historicalPrices[item.historicalPrices.length - 1].price - item.historicalPrices[0].price;
-      return { ...item, trend };
+      const Trend = item.historicalPrices[item.historicalPrices.length - 1].price - item.historicalPrices[0].price;
+      return { ...item, Trend };
     });
   }, [filteredData])
 
@@ -259,15 +259,15 @@ export default function AdvancedPriceDashboard() {
                         <td className="p-2">{item.quantity}</td>
                         <td className="p-2">₹ {item.price.toFixed(2)}</td>
                         <td className="p-2">
-                          {item.trend > 0 ? (
+                          {item.Trend > 0 ? (
                             <span className="text-green-500 flex items-center">
                               <TrendingUp className="w-4 h-4 mr-1" />
-                              {item.trend.toFixed(2)}
+                              {item.Trend.toFixed(2)}
                             </span>
                           ) : (
                             <span className="text-red-500 flex items-center">
                               <TrendingDown className="w-4 h-4 mr-1" />
-                              {Math.abs(item.trend).toFixed(2)}
+                              {Math.abs(item.Trend).toFixed(2)}
                             </span>
                           )}
                         </td>
