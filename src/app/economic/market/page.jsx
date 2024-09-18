@@ -19,7 +19,7 @@ const flowersData = [
   { name: "Marigold", quantity: "1 Kg", price: 190, trend: "Low" },
   { name: "Orchid", quantity: "1 Kg", price: 430, trend: "High" },
   { name: "Rose", quantity: "1 Kg", price: 230, trend: "Medium" },
-];
+]
 
 const vegetablesData = [
   { name: "Bangalore Tomato", quantity: "1 Kg", price: 80, trend: "Low" },
@@ -28,7 +28,7 @@ const vegetablesData = [
   { name: "Bitter Gourd", quantity: "1 Kg", price: 60, trend: "Low" },
   { name: "Bottle Gourd", quantity: "1 Kg", price: 20, trend: "Low" },
   { name: "Brinjal", quantity: "1 Kg", price: 40, trend: "Low" },
-];
+]
 
 const fruitsData = [
   { name: "Apple", quantity: "1 Kg", price: 220, trend: "Medium" },
@@ -37,7 +37,7 @@ const fruitsData = [
   { name: "Cherry", quantity: "1 Kg", price: 600, trend: "High" },
   { name: "Coconut", quantity: "1 Piece", price: 30, trend: "Low" },
   { name: "Custard Apple", quantity: "1 Kg", price: 140, trend: "Medium" },
-];
+]
 
 const chickenData = [
   { name: "Boneless Chicken", quantity: "1 Kg", price: 210, trend: "Medium" },
@@ -46,7 +46,7 @@ const chickenData = [
   { name: "Country Chicken", quantity: "1 Kg", price: 360, trend: "High" },
   { name: "Live Chicken", quantity: "1 Kg", price: 130, trend: "Low" },
   { name: "Skinless Chicken", quantity: "1 Kg", price: 200, trend: "Medium" },
-];
+]
 
 const muttonData = [
   { name: "Boneless Mutton", quantity: "1 Kg", price: 750, trend: "High" },
@@ -55,7 +55,7 @@ const muttonData = [
   { name: "Heart", quantity: "1 Kg", price: 470, trend: "High" },
   { name: "Intestine", quantity: "1 Kg", price: 420, trend: "High" },
   { name: "Kidney", quantity: "1 Kg", price: 450, trend: "High" },
-];
+]
 
 
 const categories = [
