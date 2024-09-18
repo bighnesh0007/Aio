@@ -13,49 +13,50 @@ import { Flower2, Carrot, Apple, Drumstick, Beef, TrendingUp, TrendingDown, Sear
 
 // Data from the provided JSON files (unchanged)
 const flowersData = [
-  { name: "Anthurium", quantity: "1 Kg", price: 370 },
-  { name: "Carnation", quantity: "1 Kg", price: 390 },
-  { name: "Jasmine", quantity: "1 Kg", price: 220 },
-  { name: "Marigold", quantity: "1 Kg", price: 190 },
-  { name: "Orchid", quantity: "1 Kg", price: 430 },
-  { name: "Rose", quantity: "1 Kg", price: 230 },
-]
+  { name: "Anthurium", quantity: "1 Kg", price: 370, trend: "High" },
+  { name: "Carnation", quantity: "1 Kg", price: 390, trend: "High" },
+  { name: "Jasmine", quantity: "1 Kg", price: 220, trend: "Medium" },
+  { name: "Marigold", quantity: "1 Kg", price: 190, trend: "Low" },
+  { name: "Orchid", quantity: "1 Kg", price: 430, trend: "High" },
+  { name: "Rose", quantity: "1 Kg", price: 230, trend: "Medium" },
+];
 
 const vegetablesData = [
-  { name: "Bangalore Tomato", quantity: "1 Kg", price: 80 },
-  { name: "Beans", quantity: "1 Kg", price: 180 },
-  { name: "Beetroot", quantity: "1 Kg", price: 45 },
-  { name: "Bitter Gourd", quantity: "1 Kg", price: 60 },
-  { name: "Bottle Gourd", quantity: "1 Kg", price: 20 },
-  { name: "Brinjal", quantity: "1 Kg", price: 40 },
-]
+  { name: "Bangalore Tomato", quantity: "1 Kg", price: 80, trend: "Low" },
+  { name: "Beans", quantity: "1 Kg", price: 180, trend: "Medium" },
+  { name: "Beetroot", quantity: "1 Kg", price: 45, trend: "Low" },
+  { name: "Bitter Gourd", quantity: "1 Kg", price: 60, trend: "Low" },
+  { name: "Bottle Gourd", quantity: "1 Kg", price: 20, trend: "Low" },
+  { name: "Brinjal", quantity: "1 Kg", price: 40, trend: "Low" },
+];
 
 const fruitsData = [
-  { name: "Apple", quantity: "1 Kg", price: 220 },
-  { name: "Avocado", quantity: "1 Kg", price: 180 },
-  { name: "Black Grape", quantity: "1 Kg", price: 80 },
-  { name: "Cherry", quantity: "1 Kg", price: 600 },
-  { name: "Coconut", quantity: "1 Piece", price: 30 },
-  { name: "Custard Apple", quantity: "1 Kg", price: 140 },
-]
+  { name: "Apple", quantity: "1 Kg", price: 220, trend: "Medium" },
+  { name: "Avocado", quantity: "1 Kg", price: 180, trend: "Medium" },
+  { name: "Black Grape", quantity: "1 Kg", price: 80, trend: "Low" },
+  { name: "Cherry", quantity: "1 Kg", price: 600, trend: "High" },
+  { name: "Coconut", quantity: "1 Piece", price: 30, trend: "Low" },
+  { name: "Custard Apple", quantity: "1 Kg", price: 140, trend: "Medium" },
+];
 
 const chickenData = [
-  { name: "Boneless Chicken", quantity: "1 Kg", price: 210 },
-  { name: "Chicken", quantity: "1 Kg", price: 160 },
-  { name: "Chicken Liver", quantity: "1 Kg", price: 120 },
-  { name: "Country Chicken", quantity: "1 Kg", price: 360 },
-  { name: "Live Chicken", quantity: "1 Kg", price: 130 },
-  { name: "Skinless Chicken", quantity: "1 Kg", price: 200 },
-]
+  { name: "Boneless Chicken", quantity: "1 Kg", price: 210, trend: "Medium" },
+  { name: "Chicken", quantity: "1 Kg", price: 160, trend: "Medium" },
+  { name: "Chicken Liver", quantity: "1 Kg", price: 120, trend: "Low" },
+  { name: "Country Chicken", quantity: "1 Kg", price: 360, trend: "High" },
+  { name: "Live Chicken", quantity: "1 Kg", price: 130, trend: "Low" },
+  { name: "Skinless Chicken", quantity: "1 Kg", price: 200, trend: "Medium" },
+];
 
 const muttonData = [
-  { name: "Boneless Mutton", quantity: "1 Kg", price: 750 },
-  { name: "Brain", quantity: "1 Kg", price: 480 },
-  { name: "Head", quantity: "1 Piece", price: 240 },
-  { name: "Heart", quantity: "1 Kg", price: 470 },
-  { name: "Intestine", quantity: "1 Kg", price: 420 },
-  { name: "Kidney", quantity: "1 Kg", price: 450 },
-]
+  { name: "Boneless Mutton", quantity: "1 Kg", price: 750, trend: "High" },
+  { name: "Brain", quantity: "1 Kg", price: 480, trend: "High" },
+  { name: "Head", quantity: "1 Piece", price: 240, trend: "Medium" },
+  { name: "Heart", quantity: "1 Kg", price: 470, trend: "High" },
+  { name: "Intestine", quantity: "1 Kg", price: 420, trend: "High" },
+  { name: "Kidney", quantity: "1 Kg", price: 450, trend: "High" },
+];
+
 
 const categories = [
   { name: 'Flowers', icon: Flower2, data: flowersData, color: 'hsl(var(--chart-1))' },
