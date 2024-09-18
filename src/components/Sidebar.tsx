@@ -35,6 +35,9 @@ import { TbLemon } from "react-icons/tb";
 import { FaDisease } from "react-icons/fa";
 import { GiPlantRoots } from "react-icons/gi";
 import { RiPlantFill } from "react-icons/ri";
+import { GiFertilizerBag } from "react-icons/gi";
+import { GiPlantWatering } from "react-icons/gi";
+import { GiFireFlower } from "react-icons/gi";
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
@@ -45,12 +48,12 @@ const Sidebar: React.FC = () => {
   const navItems = [
     { name: "Home", href: "/", icon: FaHome },
     { name: "Weather Status", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
-    { name: "Crop Insights", href: "/CropDashboard", icon: GiPlantRoots },
+    { name: "Crop Explorer", href: "/CropDashboard", icon: GiPlantRoots },
     { name: "Soil Insights", href: "/SoilDashboard", icon: BiSolidDashboard },
     { name: "Plant Finder", href: "/identify", icon: RiPlantFill },
     { name: "Crop Advisor", href: "/CropRecommendation", icon: FaSeedling },
-    { name: "Soil Diagnostics", href: "/SoilQualityAnalysis", icon: FaSeedling },
-    { name: "Fertilizer Recommendation", href: "/fertilizerRecommendation", icon: FaSeedling },
+    { name: "Soil Diagnostics", href: "/SoilQualityAnalysis", icon: GiPlantWatering},
+    { name: "Fertilizer Finder", href: "/fertilizerRecommendation", icon: GiFertilizerBag },
     { name: "Crop Road Map", href: "/CropRoadMapBuilder", icon: RiRoadMapLine },
     { name: "Voice To Search", href: "/voice", icon: MdKeyboardVoice },
   ];
@@ -76,7 +79,7 @@ const Sidebar: React.FC = () => {
         { name: "Rice", href: "/disease/rice", icon: FaBowlRice },
         { name: "Wheat", href: "/disease/wheat", icon: FaWheatAwn },
         { name: "Sugarcane", href: "/disease/sugarcane", icon: GiSugarCane },
-        { name: "Pulses", href: "/disease/pulses", icon: FaSeedling },
+        { name: "Pulses", href: "/disease/pulses", icon: GiFireFlower },
         { name: "Maize", href: "/disease/maize", icon: GiCorn },
         { name: "Barley", href: "/disease/barley", icon: FaBeer },
         { name: "Soybean", href: "/disease/soyabean", icon: FaSpa },
