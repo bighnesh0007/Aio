@@ -57,7 +57,7 @@ const Photo: React.FC = () => {
     setProgress(0)
 
     try {
-      const response = await axios.post('http://localhost:3001/detect', formData, {
+      const response = await axios.post('https://robofarmerserver.vercel.app/detect', formData, {
         responseType: 'arraybuffer',
         headers: {
           'Content-Type': 'multipart/form-data',
