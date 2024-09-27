@@ -75,6 +75,7 @@
     "react-toastify": "^10.0.5",
     "recharts": "^2.12.7",
     "shadcn-ui": "^0.8.0",
+    "sharp": "^0.33.5",
     "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
