@@ -33,6 +33,12 @@ import { TiWeatherPartlySunny } from "react-icons/ti";
 import { BiSolidDashboard } from "react-icons/bi";
 import { TbLemon } from "react-icons/tb";
 import { FaDisease } from "react-icons/fa";
+import { GiPlantRoots } from "react-icons/gi";
+import { RiPlantFill } from "react-icons/ri";
+import { GiFertilizerBag } from "react-icons/gi";
+import { GiPlantWatering } from "react-icons/gi";
+import { GiFireFlower } from "react-icons/gi";
+import { CgInsights } from "react-icons/cg";
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
@@ -42,13 +48,13 @@ const Sidebar: React.FC = () => {
 
   const navItems = [
     { name: "Home", href: "/", icon: FaHome },
-    { name: "Weather Dashboard", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
-    { name: "Crop Dashboard", href: "/CropDashboard", icon: BiSolidDashboard },
-    { name: "Soil Dashboard", href: "/SoilDashboard", icon: BiSolidDashboard },
-    { name: "Identify", href: "/identify", icon: SiGooglelens },
-    { name: "Crop Recommendation", href: "/CropRecommendation", icon: FaSeedling },
-    { name: "Soil Quality Analysis", href: "/SoilQualityAnalysis", icon: FaSeedling },
-    { name: "Fertilizer Recommendation", href: "/fertilizerRecommendation", icon: FaSeedling },
+    { name: "Weather Status", href: "/WeatherDashboard", icon: TiWeatherPartlySunny },
+    { name: "Crop Explorer", href: "/CropDashboard", icon: GiPlantRoots },
+    { name: "Soil Insights", href: "/SoilDashboard", icon: CgInsights },
+    { name: "Plant Finder", href: "/identify", icon: RiPlantFill },
+    { name: "Crop Advisor", href: "/CropRecommendation", icon: FaSeedling },
+    { name: "Soil Diagnostics", href: "/SoilQualityAnalysis", icon: GiPlantWatering},
+    { name: "Fertilizer Finder", href: "/fertilizerRecommendation", icon: GiFertilizerBag },
     { name: "Crop Road Map", href: "/CropRoadMapBuilder", icon: RiRoadMapLine },
     { name: "Voice To Search", href: "/voice", icon: MdKeyboardVoice },
   ];
@@ -74,7 +80,7 @@ const Sidebar: React.FC = () => {
         { name: "Rice", href: "/disease/rice", icon: FaBowlRice },
         { name: "Wheat", href: "/disease/wheat", icon: FaWheatAwn },
         { name: "Sugarcane", href: "/disease/sugarcane", icon: GiSugarCane },
-        { name: "Pulses", href: "/disease/pulses", icon: FaSeedling },
+        { name: "Pulses", href: "/disease/pulses", icon: GiFireFlower },
         { name: "Maize", href: "/disease/maize", icon: GiCorn },
         { name: "Barley", href: "/disease/barley", icon: FaBeer },
         { name: "Soybean", href: "/disease/soyabean", icon: FaSpa },
@@ -104,7 +110,7 @@ const Sidebar: React.FC = () => {
       <div className="flex items-center justify-between mb-6">
         {!isCollapsed && (
           <h2 className="text-2xl font-bold text-green-600 dark:text-green-400">
-            Over View
+            Overview Hub
           </h2>
         )}
         <button
