@@ -129,7 +129,7 @@ export default function VideoFrameExtractor() {
     try {
       const responses = await Promise.all(
         frames.map((frame, index) =>
-          axios.post("http://localhost:3001/process-frame", { frame, index })
+          axios.post("https://robofarmerserver.vercel.app/process-frame", { frame, index })
         )
       );
       setApiResponses(responses.map((res) => res.data));
