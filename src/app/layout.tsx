@@ -30,6 +30,18 @@ export default function RootLayout({
 
       <html lang="en">
         <body className={inter.className}>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7916766114053705"
+     crossorigin="anonymous"></script>
+<!-- When naming your Google AdSense ad units, it's important to choose names that not only reflect the placement and purpose of the ads but also help you keep track of performance effectively. Consider using descriptive yet professional names like PrimeSpot AdBlock or TopView AdSlot, which hint at high visibility and prime positioning. You could also opt for names that convey engagement and user interaction, such as EngageAds or SmartAd Placement. If your content is niche-specific, like tech or lifestyle, you could tailor names like TechTrend Ads or ContentFlow Ads to reflect your site's theme. This way, your ad units remain organized and aligned with your content, enhancing both user experience and ad performance. -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7916766114053705"
+     data-ad-slot="8892839815"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
           <div className="min-h-screen flex flex-col  ">
             <Navbar />
             <div className="flex">
